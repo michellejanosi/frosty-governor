@@ -1,1 +1,11 @@
-<h1>Welcome to Frosty Governor🍻</h1>
+<h1>All the Best Underground Pubs in London, GB 🇬🇧</h1><br>
+
+<% @places.each do |place| %>
+  <div>
+    <h2><%= place.name %></h2><br>
+    <i><%= place.address %></i><br>
+    <p><%= place.description %></p><br>
+  </div>
+
+  <hr>
+<% end %>
