@@ -4,6 +4,10 @@
   <div class="booyah-box col-7">
     <h2><%= place.name %></h2>
     <i class="italic"><%= place.address %></i><br><br>
-    <p class="description">“<%= place.description %>”</p><br>
+    <p class="description"><%= place.description %></p><br>
   </div>
 <% end %>
+
+<div class="col-12">
+  <%= will_paginate @places, renderer: BootstrapPagination::Rails, page_links: false  %>
+</div>
