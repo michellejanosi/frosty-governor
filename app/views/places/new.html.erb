@@ -1,0 +1,10 @@
+<div class="booyah-box new-box col-6">
+  <h2 class="new-place">Enter Your Pub Details:</h2>
+  <%= simple_form_for @place do |f| %>
+    <%= f.input :name, label: 'Name:' %>
+    <%= f.input :address, label: 'Address:' %>
+    <%= f.input :description, label: 'Description:' %>
+    <br>
+    <%= f.submit 'Add Pub 🍻', class: 'btn btn-primary btn-new' %>
+  <% end %>
+</div>

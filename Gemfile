@@ -41,6 +41,9 @@ gem 'bootstrap', '~> 4.0.0.alpha6'
 # Add will_paginate bootstrap for pagination
 gem 'will_paginate-bootstrap'
 
+# Include a simple form to add new places
+gem 'simple_form'
+
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platform: :mri

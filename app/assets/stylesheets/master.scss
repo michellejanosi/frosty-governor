@@ -14,9 +14,18 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-  color: #e4e7ea;
+  color: #fcfcfc;
   text-shadow: 2px 2px 1px #2a2a2a;
   padding-top: 3vh;
+}
+
+h2 {
+  color: #2a2a2a;
+}
+
+/* new place form h2 */
+.new-place {
+  margin-bottom: 30px;
 }
 
 button {
@@ -27,6 +36,11 @@ button:focus {
   outline: 0;
 }
 
+.btn-new {
+  font-family: 'uglyquaregular';
+  color: #e4e7ea;
+  font-size: 1.15em;
+}
 
 .navbar {
   box-shadow: 0px 1px 3px #2a2a2a;
@@ -41,7 +55,7 @@ button:focus {
   -moz-box-shadow: 1px 1px 2px 0 #d0d0d0;
   -webkit-box-shadow: 1px 1px 2px 0 #d0d0d0;
   box-shadow: 1px 1px 2px 0 #d0d0d0;
-  background: #e4e7ea;
+  background: #fcfcfc;
   border: 1px solid #ccc;
   border-color: #e4e4e4 #bebebd #bebebd #e4e4e4;
   margin: 15px auto;
@@ -55,12 +69,25 @@ button:focus {
 }
 
 .description {
-  font-size: 18px;
+  font-size: 1.25em;
+}
+
+.new-box {
+  margin-top: 5vh;
+}
+
+.control-label {
+  font-family: 'uglyquaregular';
+  font-size: 1.15em;
+}
+
+.form-control {
+  font-family: 'uglyquaregular';
 }
 
 .pagination {
   justify-content: center;
-  color: #e4e7ea;
+  color: #fcfcfc;
   padding: 20px;
   font-size: 1.25em;
 }
