@@ -1,6 +1,7 @@
-<div class="booyah-box col-6">
+<div class="booyah-box col-6 well clearfix">
   <h2><%= @place.name %></h2>
   <i class="italic"><%= @place.address %></i>
   <br><br>
   <p class="description"><%= @place.description %></p>
+  <%= link_to 'Edit', edit_place_path(@place), class: 'btn btn-primary float-right' %>
 </div>
