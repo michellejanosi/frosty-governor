@@ -56,6 +56,14 @@ button:focus, .btn {
   font-size: 1.15em;
 }
 
+.btn-secondary {
+  color: #444;
+}
+
+.form-control:focus {
+    border-color: rgba(0, 0, 0, 0.15);
+}
+
 .navbar {
   box-shadow: 0px 1px 3px #2a2a2a;
 }
