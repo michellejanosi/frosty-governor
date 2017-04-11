@@ -7,7 +7,7 @@
     <p class="description"><%= place.description %></p><br>
 
     <% if place.user.present? %>
-      <small><%= place.user.email %></small>
+      <small class="float-right">Added/updated by <%= place.user.email %></small>
     <% end %>
   </div>
 <% end %>
