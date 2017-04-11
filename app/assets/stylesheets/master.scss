@@ -24,16 +24,20 @@ h2 {
   color: #2a2a2a;
 }
 
+a:hover {
+  text-decoration: none;
+}
+
 /* new place form h2 */
 .new-place {
   margin-bottom: 30px;
 }
 
-button {
+button, .btn {
   cursor: pointer;
 }
 
-button:focus {
+button:focus, .btn {
   outline: 0;
 }
 
