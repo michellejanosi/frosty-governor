@@ -50,6 +50,12 @@ gem "font-awesome-rails"
 # Add user authentication
 gem 'devise'
 
+# Convert an address to a latitude and longitude
+gem 'geocoder'
+
+# To add values to the ENV on our localhost
+gem 'figaro'
+
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platform: :mri
