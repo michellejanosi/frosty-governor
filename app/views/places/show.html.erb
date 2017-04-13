@@ -35,8 +35,8 @@
       <%= link_to 'Delete', place_path(@place), method: :delete, data: {confirm: 'Are you sure you want to delete this?'},class: 'btn btn-danger' %>
     <% end %>
   </div>
-
-  <%= simple_form_for @comment, url: '#' do |f| %>
+  <br>
+  <%= simple_form_for @comment, url: place_comments_path(@place) do |f| %>
     <%= f.input :message, label: 'Comment:' %>
     <%= f.input :rating, label: 'Rating:' %>
     <%= f.submit "Add Comment 💬", class: 'btn btn-secondary' %>
