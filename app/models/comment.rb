@@ -10,3 +10,6 @@ class Comment < ApplicationRecord
     '5 stars': '⭐️⭐️⭐️⭐️⭐️'
   }
 end
+
+def rating
+end

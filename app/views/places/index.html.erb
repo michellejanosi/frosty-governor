@@ -6,6 +6,20 @@
     <i class="italic"><%= place.address %></i><br><br>
     <p class="description"><%= place.description %></p><br>
 
+
+    <% if place.comments.present? %>
+      <div class="col-12">
+        <blockquote class="index">
+          <% if place.comments.last.rating.present? %>
+            <%= place.comments.last.rating %>
+          <% end %>
+          “<%= place.comments.last.message %>”
+          <!-- <small><%= place.comments.last.user.email %></small> -->
+        </blockquote>
+      </div>
+    <% end %>
+
+
     <% if place.user.present? %>
       <small class="float-right">Added by <%= place.user.email %> 🇬🇧</small>
     <% end %>
