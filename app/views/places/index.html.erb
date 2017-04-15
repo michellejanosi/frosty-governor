@@ -6,6 +6,12 @@
     <i class="italic"><%= place.address %></i><br><br>
     <p class="description"><%= place.description %></p><br>
 
+    <% if place.photos.present? %>
+      <div class="col-12">
+        <%= image_tag place.photos.last, :class => 'img-fluid' %>
+      </div>
+    <% end %>
+    <br>
 
     <% if place.comments.present? %>
       <div class="col-12">
