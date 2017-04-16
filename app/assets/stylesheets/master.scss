@@ -168,8 +168,9 @@ img {
 }
 
 .img-index {
-  // width: 90%;
-  // height: 340px;
+  width: 200px;
+  height: 200px;
+  padding-left: 20px;
   padding-top: 20px;
   padding-bottom: 20px;
 }
@@ -177,4 +178,8 @@ img {
 #photo_picture {
   margin-left: 10px;
   font-family: 'uglyquaregular';
+}
+
+.clear {
+  clear: both;
 }
