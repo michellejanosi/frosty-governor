@@ -1,4 +1,5 @@
 # config/initializers/carrierwave.rb
+# Amazon AWS S3
 
 CarrierWave.configure do |config|
   config.fog_credentials = {
