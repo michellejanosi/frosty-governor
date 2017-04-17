@@ -11,10 +11,10 @@ class Comment < ApplicationRecord
     '5 stars': '⭐️⭐️⭐️⭐️⭐️'
   }
 
-  def rating
-  end
-
   def send_comment_email
     NotificationMailer.comment_added(self).deliver
   end
+end
+
+def rating
 end
