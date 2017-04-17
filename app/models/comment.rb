@@ -1,6 +1,7 @@
 class Comment < ApplicationRecord
   belongs_to :user
   belongs_to :place
+  after_create :send_comment_email
 
   RATINGS = {
     '1 star': '⭐️',
@@ -9,7 +10,11 @@ class Comment < ApplicationRecord
     '4 stars': '⭐️⭐️⭐️⭐️',
     '5 stars': '⭐️⭐️⭐️⭐️⭐️'
   }
-end
 
-def rating
+  def rating
+  end
+
+  def send_comment_email
+    NotificationMailer.comment_added(self).deliver
+  end
 end
