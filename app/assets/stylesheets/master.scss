@@ -24,6 +24,10 @@ h2 {
   color: #2a2a2a;
 }
 
+h3 {
+  font-size: 2.4em;
+}
+
 a {
   color: #d91c1c;
 }
@@ -33,7 +37,28 @@ a:hover {
   color: #ad1616;
 }
 
-/* new place form h2 */
+.carousel-inner > .carousel-item > img, .carousel-inner > .carousel-item > a > img {
+  height: 90vh;
+  width: 100%;
+  padding-top: 0;
+}
+
+.carousel-caption {
+  color: #fcfcfc;
+  text-shadow: 2px 2px 1px #2a2a2a;
+  text-transform: uppercase;
+  letter-spacing: .2em;
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  position: absolute;
+  left: 0;
+  padding: 25px 0;
+}
+
+.carousel-indicators {
+  display: none;
+}
+
 .new-place {
   margin-bottom: 30px;
 }
@@ -185,5 +210,5 @@ img {
 }
 
 .flag {
-  padding: 0;
+  padding: 0 0 5px 0;
 }

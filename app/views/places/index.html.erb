@@ -7,21 +7,21 @@
   </ol>
   <div class="carousel-inner" role="listbox">
     <div class="carousel-item active">
-      <%= image_tag 'pub1.jpg', class: 'd-block img-fluid' %>
-      <div class="carousel-caption d-none d-md-block">
-        <h3>The Best Pubs - Nothing Else</h3>
-      </div>
-    </div>
-    <div class="carousel-item">
       <%= image_tag 'pub2.jpg', class: 'd-block img-fluid' %>
       <div class="carousel-caption d-none d-md-block">
-        <h3>Find the Best Pubs in Town</h3>
+        <h3>Looking for a Pint?🍺</h3>
       </div>
     </div>
     <div class="carousel-item">
       <%= image_tag 'pub3.jpg', class: 'd-block img-fluid' %>
       <div class="carousel-caption d-none d-md-block">
-        <h3>The Best Pubs in London</h3>
+        <h3>We Found the Best Pubs in London</h3>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <%= image_tag 'pub1.jpg', class: 'd-block img-fluid' %>
+      <div class="carousel-caption d-none d-md-block">
+        <h3>The Best Pubs - Nothing Else <i class="fa fa-hand-o-down"></i></h3>
       </div>
     </div>
   </div>
@@ -36,10 +36,10 @@
 </div>
 
 
-<h1 class="text-center">Best Underground Pubs in London <%= image_tag "british-flag.png", width: "56px", height: "56px", class: "flag" %></h1><br>
+<!-- <h1 class="text-center">Best Underground Pubs in London <%= image_tag "british-flag.png", width: "56px", height: "56px", class: "flag" %></h1><br> -->
 
 <% @places.each do |place| %>
-  <div class="booyah-box col-7">
+  <div class="booyah-box col-8">
     <% if place.photos.present? %>
       <div class="col-12">
         <%= image_tag place.photos.last.picture, class: 'img-fluid img-index float-right' %>
