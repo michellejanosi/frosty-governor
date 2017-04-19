@@ -17,7 +17,8 @@ h1, h2, h3, h4, h5, h6 {
 h1 {
   color: #fcfcfc;
   text-shadow: 2px 2px 1px #2a2a2a;
-  padding-top: 3vh;
+  padding-top: 2vh;
+  font-size: 3.75em;
 }
 
 h2 {
@@ -38,16 +39,15 @@ a:hover {
 }
 
 .carousel-inner > .carousel-item > img, .carousel-inner > .carousel-item > a > img {
-  height: 90vh;
+  height: 550px;
   width: 100%;
   padding-top: 0;
 }
 
 .carousel-caption {
-  color: #fcfcfc;
+  font-family: 'uglyquaitalic';
+  color: #e4e7ea;
   text-shadow: 2px 2px 1px #2a2a2a;
-  text-transform: uppercase;
-  letter-spacing: .2em;
   background-color: rgba(0, 0, 0, 0.5);
   width: 100%;
   position: absolute;
