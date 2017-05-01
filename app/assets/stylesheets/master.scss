@@ -44,16 +44,16 @@ a:hover {
   padding-top: 0;
 }
 
-.carousel-caption {
-  font-family: 'uglyquaitalic';
-  color: #e4e7ea;
-  text-shadow: 2px 2px 1px #2a2a2a;
-  background-color: rgba(0, 0, 0, 0.5);
-  width: 100%;
-  position: absolute;
-  left: 0;
-  padding: 25px 0;
-}
+// .carousel-caption {
+//   font-family: 'uglyquaitalic';
+//   color: #e4e7ea;
+//   text-shadow: 2px 2px 1px #2a2a2a;
+//   background-color: rgba(0, 0, 0, 0.5);
+//   width: 100%;
+//   position: absolute;
+//   left: 0;
+//   padding: 25px 0;
+// }
 
 .carousel-indicators {
   display: none;
@@ -95,7 +95,7 @@ button:focus, .btn {
 
 .navbar-inverse .navbar-brand {
   color: #e4e7ea;
-  font-size: 26px;
+  font-size: 30px;
 }
 
 .booyah-box {
