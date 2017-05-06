@@ -1,1 +1,5 @@
 <h2>User Dashboard</h2>
+<h3><%= @user.email %></h3>
+<h3>Member since: <%= @user.created_at.strftime("%B %d, %Y") %></h3>
+<h4><%= @user.comments.count %> total comments</h4>
+<h4><%= @user.comments.where(rating: '5_stars').count %> total 5 star reviews</h4>
