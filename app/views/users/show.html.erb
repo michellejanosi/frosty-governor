@@ -11,5 +11,23 @@
       <h4><%= @user.comments.where(rating: '5_stars').count %> total 5 star reviews</h4>
     </div>
   </div>
-  <div class="clear"></div>
+
+  <br>
+  <br>
+  <br>
+  <h2 class="text-center">Comments 💬</h2>
+  <br>
+  <br>
+  <div class="row">
+    <% @user.comments.each do |comment| %>
+      <div class="col-12 col-sm-6">
+        <h5 class="text-center"><%= link_to comment.place.name, place_path(comment.place) %></h5>
+        <blockquote>
+          <strong><%= comment.rating %></strong>
+            “<%= comment.message %>”
+          <small class="italic"><%= comment.user.email %></small>
+        </blockquote>
+      </div>
+    <% end %>
+  </div>
 </div>
