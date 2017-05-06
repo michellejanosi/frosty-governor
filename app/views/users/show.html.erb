@@ -30,4 +30,38 @@
       </div>
     <% end %>
   </div>
+
+  <br>
+  <br>
+  <h2 class="text-center">Places 🍻</h2>
+  <br>
+  <br>
+  <div class="row">
+    <% @user.places.each do |place| %>
+      <div class="col-12 col-sm-6">
+        <% if place.photos.present? %>
+          <div class="col-12">
+            <%= image_tag place.photos.last.picture, class: 'img-fluid img-index float-right' %>
+          </div>
+        <% end %>
+
+        <h2><%= link_to place.name, place_path(place) %>🍻</h2>
+        <i class="italic"><%= place.address %></i><br><br>
+        <p class="description"><%= place.description %></p>
+        <br class="clear">
+
+        <% if place.comments.present? %>
+          <div class="col-12">
+            <blockquote class="index">
+              <% if place.comments.last.rating.present? %>
+                <%= place.comments.last.rating %>
+              <% end %>
+              “<%= place.comments.last.message %>”
+              <!-- <small><%= place.comments.last.user.email %></small> -->
+            </blockquote>
+          </div>
+        <% end %>
+      </div>
+    <% end %>
+  </div>
 </div>
